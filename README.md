@@ -1,9 +1,9 @@
-# Magic Mirror Module: Buttons
+# Magic Mirror Module: Buttonmatrix
 
 This a module for [Magic Mirror²](https://github.com/MichMich/MagicMirror) to act based on button presses via GPIO.
-It is capable of connecting multiple buttons at once, which can be individually configured.
-It is basically a generalized version of the [Button module](https://github.com/PtrBld/MMM-Button), original idea comes from @PtrBld.
-However it only sends out notifications to other modules.
+It builds upon [MMM-Buttons](https://github.com/Jopyth/MMM-Buttons.git) by [Jopyth] (https://github.com/Jopyth). In my Magic Mirror² I use a 4 x 4 button matrix like [this one](https://www.amazon.de/Matrix-Button-Keyboard-Expansion-Arduino/dp/B01LYIXGKY).
+The thing about is that a button press in such a matrix triggers ***two*** GPIO pins, not one. So I'm trying to extend the original module to allow you to implement a button matrix in your mirror.
+ The original idea for a button module comes from @PtrBld, thanks for that!.
 
 For example this can be used to send notifications to the following modules:
 
@@ -15,8 +15,8 @@ For example this can be used to send notifications to the following modules:
 Clone this repository in your `modules` folder, and install dependencies:
 ```bash
 cd ~/MagicMirror/modules # adapt directory if you are using a different one
-git clone https://github.com/Jopyth/MMM-Buttons.git
-cd MMM-Buttons
+git clone https://github.com/tgeimer/MMM-Buttonmatrix.git
+cd MMM-Buttonmatrix
 npm install # this can take a while
 ```
 
@@ -29,7 +29,7 @@ One switches on the display on a short press, and switches it off on a long pres
 The other does not do anything on a short press, but shuts down the system after keeping it pressed for 3 seconds with an explanatory user alert.
 ```
 {
-    module: 'MMM-Buttons',
+    module: 'MMM-Buttonmatrix',
     config: {
         buttons: [
             {

@@ -1,7 +1,7 @@
 /* Magic Mirror
- * Node Helper: Buttons
+ * Node Helper: Buttonmatrix
  *
- * By Joseph Bethge
+ * By Joseph Bethge, Thomas Geimer
  * MIT Licensed.
  */
 
