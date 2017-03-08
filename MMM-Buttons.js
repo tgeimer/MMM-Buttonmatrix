@@ -1,13 +1,13 @@
 /* global Module */
 
 /* Magic Mirror
- * Module: Buttons
+ * Module: Buttonmatrix
  *
- * By Joseph Bethge
+ * By Joseph Bethge, Thomas Geimer
  * MIT Licensed.
  */
 
-Module.register("MMM-Buttons", {
+Module.register("MMM-Buttonmatrix", {
 
     requiresVersion: "2.1.0",
 
